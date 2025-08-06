@@ -1,0 +1,309 @@
+@font-face
+{
+    font-family: 'Roboto';
+    /* Choose a name for your font */
+    src: url(roboto/RobotoCondensed-VariableFont_wght.ttf);
+    /* Path to your font file */
+    font-weight: normal;
+    /* Or the specific weight of this file */
+    font-style: normal;
+    /* Or italic if it's an italic font file */
+}
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+    /* Apply the Roboto font, with fallback */
+    margin: 0;
+}
+
+/* Image Banner Placeholder Styles (unchanged) */
+.image-banner-placeholder
+{
+    width: 100%;
+    height: 300px;
+    background-color: #b0bec5;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #455a64;
+}
+
+/* Navbar styles (MODIFIED) */
+.navbar
+{
+    background-color: #0d47a1;
+    /* Dark Blue */
+    padding: 1rem 0;
+    /* Adjust vertical padding for better spacing */
+    color: white;
+    width: 100%;
+    /* Make the navbar span the full width */
+}
+
+.navbar-container
+{
+    display: flex;
+    justify-content: center;
+    /* Center the content horizontally */
+    align-items: center;
+    max-width: 1200px;
+    /* Adjust max-width as needed */
+    margin: 0 auto;
+    /* Center the container on the page */
+    padding: 0 20px;
+    /* Add some horizontal padding inside the container */
+}
+
+.navbar-logo
+{
+    /* You can adjust logo styling here if needed */
+    margin-right: 2rem;
+    /* Add some space between the logo and the menu */
+}
+
+.navbar-logo .navbar-brand
+{
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    /* Slightly larger font size for the logo */
+    font-weight: bold;
+}
+
+.navbar-menu
+{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    /* Vertically align the menu items */
+    padding: 0;
+    margin: 0;
+    /* Remove default ul margins */
+}
+
+.navbar-menu li
+{
+    margin: 0 1.5rem;
+    /* Add horizontal spacing between menu items */
+}
+
+.navbar-link
+{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    /* Adjust font size for the menu links */
+    padding: 0.5rem 0;
+    /* Add some vertical padding for better touch targets */
+}
+
+.navbar-link:hover
+{
+    text-decoration: underline;
+    color: #bbdefb;
+    /* Light Blue on hover */
+}
+
+/* Home Page Styles (unchanged) */
+.home-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.hero-section
+{
+    text-align: center;
+    padding: 2rem;
+    background-color: #e3f2fd;
+    /* Very Light Blue */
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.hero-section h1
+{
+    font-size: 2.5rem;
+    color: #0d47a1;
+    /* Dark Blue */
+    margin-bottom: 1rem;
+}
+
+.hero-section p
+{
+    font-size: 1.2rem;
+    color: #1565c0;
+    /* Medium Blue */
+}
+
+.info-section
+{
+    text-align: center;
+    padding: 1rem;
+    background-color: #90caf9;
+    /* Mid Blue */
+    width: 80%;
+    margin-bottom: 2rem;
+}
+
+.info-section h2
+{
+    font-size: 2rem;
+    color: #0d47a1;
+    /* Dark Blue */
+    margin-bottom: 1rem;
+}
+
+.info-section p
+{
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #0b3d8f;
+    /* Slightly darker blue */
+}
+
+/* ~~~~~~~~~~~~~~~~~~~footer css~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.footer-socials
+{
+    margin-top: 15px;
+    /* Corrected: Added a value, e.g., 15px */
+    /* Space above the social icons */
+    text-align: center;
+    /* Centers the icons if footer-info doesn't already do it */
+}
+
+.social-icon
+{
+    display: inline-block;
+    /* Allows margin and proper spacing */
+    margin: 0 10px;
+    /* Space between icons if you add more */
+    color: #bbdefb;
+    /* Initial icon color (light blue, matches footer links) */
+    transition: color 0.3s ease;
+}
+
+.social-icon svg
+{
+    width: 28px;
+    /* Adjust size as needed */
+    height: 28px;
+    fill: currentColor;
+    /* SVG will use the color of its parent <a> tag */
+}
+
+.social-icon:hover
+{
+    color: #ffffff;
+    /* Icon color on hover (white, matches footer link hover) */
+}
+
+
+.home-footer
+{
+    background-color: #0d47a1;
+    /* Dark Blue, consistent with navbar */
+    color: #f0f0f0;
+    /* Light Grey/Off-white text for good contrast */
+    padding: 30px 0;
+    margin-top: 40px;
+    /* Space above the footer */
+    font-size: 0.9em;
+    width: 100%;
+}
+
+.footer-content
+{
+    display: flex;
+    justify-content: space-around;
+    /* Distribute content nicely */
+    align-items: flex-start;
+    max-width: 1100px;
+    /* Or your site's max-width */
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    /* Allow items to wrap on smaller screens */
+}
+
+.footer-nav,
+.footer-info
+{
+    margin: 10px;
+    flex: 1;
+    /* Allow them to grow and share space */
+    min-width: 200px;
+    /* Minimum width before wrapping */
+}
+
+.footer-nav h3
+{
+    margin-bottom: 15px;
+    color: #ffffff;
+    /* White for heading, stands out on dark blue */
+    border-bottom: 1px solid #1e88e5;
+    /* Brighter blue border */
+    padding-bottom: 10px;
+}
+
+.footer-nav ul
+{
+    list-style: none;
+    padding: 0;
+}
+
+.footer-nav ul li
+{
+    margin-bottom: 8px;
+}
+
+.footer-link
+{
+    color: #bbdefb;
+    /* Lighter link color for footer */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover
+{
+    color: #ffffff;
+    /* Brighter on hover */
+    text-decoration: underline;
+}
+
+.footer-info p
+{
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px)
+{
+    .footer-content
+    {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-nav,
+    .footer-info
+    {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .footer-nav h3
+    {
+        text-align: center;
+    }
+}

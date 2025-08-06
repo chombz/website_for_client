@@ -1,0 +1,27 @@
+2025-05-12 11:41:03.693 [info] Started local extension host with pid 16568.
+2025-05-12 11:41:04.013 [info] ChatSessionStore: Migrating 0 chat sessions from storage service to file system
+2025-05-12 11:41:04.803 [info] ComputeTargetPlatform: win32-x64
+2025-05-12 11:41:04.852 [info] [google.geminicodeassist]: Command `geminicodeassist.sdlcagents.agentBoard` already registered by Gemini Code Assist (google.geminicodeassist)
+2025-05-12 11:41:04.905 [warning] [redhat.vscode-xml]: Cannot register 'redhat.telemetry.enabled'. This property is already registered.
+2025-05-12 11:41:04.906 [warning] [twxs.cmake]: Cannot register 'cmake.cmakePath'. This property is already registered.
+2025-05-12 11:41:05.707 [error] [xabikos.JavaScriptSnippets]: Unknown language in `contributes.JavaScriptSnippets.language`. Provided value: vue
+2025-05-12 11:41:06.072 [info] Settings Sync: Account status changed from uninitialized to unavailable
+2025-05-12 11:41:09.060 [info] [perf] Render performance baseline is 95ms
+2025-05-12 11:41:13.880 [info] Extension host (LocalProcess pid: 16568) is unresponsive.
+2025-05-12 11:41:15.217 [info] UNRESPONSIVE extension host: starting to profile NOW
+2025-05-12 11:41:15.645 [error] [Extension Host] Failed to load message bundle for file c:\Users\PC\.vscode\extensions\ms-edgedevtools.vscode-edge-devtools-2.1.8\out\extension
+2025-05-12 11:41:15.647 [error] [Extension Host] Failed to load message bundle for file c:\Users\PC\.vscode\extensions\ms-edgedevtools.vscode-edge-devtools-2.1.8\out\extension
+2025-05-12 11:41:15.655 [error] [Extension Host] Failed to load message bundle for file c:\Users\PC\.vscode\extensions\ms-edgedevtools.vscode-edge-devtools-2.1.8\out\extension
+2025-05-12 11:41:15.656 [error] [Extension Host] Failed to load message bundle for file c:\Users\PC\.vscode\extensions\ms-edgedevtools.vscode-edge-devtools-2.1.8\out\extension
+2025-05-12 11:41:15.662 [error] [Extension Host] Failed to load message bundle for file c:\Users\PC\.vscode\extensions\ms-edgedevtools.vscode-edge-devtools-2.1.8\out\extension
+2025-05-12 11:41:15.663 [error] [Extension Host] Failed to load message bundle for file c:\Users\PC\.vscode\extensions\ms-edgedevtools.vscode-edge-devtools-2.1.8\out\extension
+2025-05-12 11:41:15.664 [error] [Extension Host] Failed to load message bundle for file c:\Users\PC\.vscode\extensions\ms-edgedevtools.vscode-edge-devtools-2.1.8\out\extension
+2025-05-12 11:41:15.665 [error] [Extension Host] Failed to load message bundle for file c:\Users\PC\.vscode\extensions\ms-edgedevtools.vscode-edge-devtools-2.1.8\out\extension
+2025-05-12 11:41:15.816 [info] Extension host (LocalProcess pid: 16568) is responsive.
+2025-05-12 11:41:15.816 [info] UNRESPONSIVE extension host: received responsive event and cancelling profiling session
+2025-05-12 11:41:16.036 [warning] UNRESPONSIVE extension host: 'ms-edgedevtools.vscode-edge-devtools' took 38.79457227373552% of 233.837ms, saved PROFILE here: 'file:///c%3A/Users/PC/AppData/Local/Temp/exthost-c674cc.cpuprofile'
+2025-05-12 11:41:21.249 [error] [Extension Host] Failed to set user repo Error: request to https://undefined/v1/service:setUserRepo failed, reason: getaddrinfo ENOTFOUND undefined
+	at t.HttpClient.<anonymous> (c:\Users\PC\.vscode\extensions\google.geminicodeassist-2.32.0\dist\extension.js:2:13566386)
+	at Generator.throw (<anonymous>)
+	at i (c:\Users\PC\.vscode\extensions\google.geminicodeassist-2.32.0\dist\extension.js:2:13564128)
+	at process.processTicksAndRejections (node:internal/process/task_queues:95:5)

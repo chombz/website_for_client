@@ -1,0 +1,91 @@
+.about-us-container
+{
+    padding: 20px;
+    /* Keep some overall padding for breathing room around the edges */
+}
+
+section
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    /* Reduced gap between sections */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-content
+{
+    flex: 1 1 400px;
+    padding: 30px;
+    background-color: #f9f9f9;
+}
+
+.text-content h2
+{
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.text-content p
+{
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 0;
+    /* Removed default bottom margin from paragraphs to reduce internal spacing */
+}
+
+/* Add a margin-top to subsequent paragraphs within text-content if you want some spacing between them,
+   but want to control it more precisely than default browser margins. */
+.text-content p+p
+{
+    margin-top: 10px;
+    /* Add a small margin between paragraphs if desired */
+}
+
+
+.image-container
+{
+    flex: 1 1 400px;
+    overflow: hidden;
+}
+
+.image-container img
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* Changed to 100% to ensure image fills the container height */
+    object-fit: cover;
+}
+
+/* Adjust layout for smaller screens */
+@media (max-width: 768px)
+{
+    section
+    {
+        flex-direction: column;
+    }
+
+    .image-container
+    {
+        width: 100%;
+        height: 250px;
+        /* Give a fixed height on smaller screens to prevent image from becoming too stretched or squashed */
+    }
+}
+
+/* Example of different background colors for sections */
+.mission-section
+{
+    background-color: #e6f7ff;
+}
+
+.vision-impact-section
+{
+    background-color: #f0f8ea;
+    /* To make the image and text sections seamless, you might want to consider removing
+       the background color from the section itself and applying it only to .text-content
+       or making the colors blend better. For now, keeping as is. */
+}

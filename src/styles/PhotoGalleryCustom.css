@@ -1,0 +1,73 @@
+/* src/styles/PhotoGalleryCustom.css */
+
+/* Custom grid for the photo gallery to allow specific item spanning */
+.photo-gallery-grid
+{
+    display: grid;
+    /* Explicitly set two columns of equal width */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    /* Adjust gap as needed */
+    margin-top: 20px;
+}
+
+/* Style for individual items in the custom photo gallery grid */
+/* Ensure cards take full available width within their grid cell */
+.photo-gallery-grid .newspaper-clipping-card
+{
+    width: 100%;
+    /* Make sure card fills its grid cell */
+    /* You might need to adjust min-height or height here if the content within
+       the cards causes inconsistent heights, especially for vertical images */
+    min-height: 400px;
+    /* Example: Adjust this based on how tall you want your cards */
+    display: flex;
+    /* Helps with content alignment within the card */
+    flex-direction: column;
+}
+
+/* Class for photos that should take up the full width */
+.full-width-photo
+{
+    grid-column: 1 / -1;
+    /* This makes the item span all columns */
+}
+
+/* Specific adjustments for vertical photos within the two-column layout */
+.photo-gallery-grid .vertical-photo-card .clipping-preview-img
+{
+    /* If vertical images appear stretched or squashed, adjust object-fit */
+    object-fit: contain;
+    /* Ensures the entire image is visible, scales down if needed */
+    height: 100%;
+    /* Fill the height of its container */
+    width: 100%;
+    /* Fill the width of its container */
+}
+
+/* Ensure image within the card scales properly */
+.photo-gallery-grid .newspaper-clipping-card .clipping-preview-img
+{
+    width: 100%;
+    height: auto;
+    /* Maintain aspect ratio */
+    display: block;
+    /* Remove extra space below image */
+}
+
+
+/* Optional: Media queries for responsiveness */
+@media (max-width: 768px)
+{
+    .photo-gallery-grid
+    {
+        grid-template-columns: 1fr;
+        /* Single column on smaller screens */
+    }
+
+    .full-width-photo
+    {
+        grid-column: auto;
+        /* Reset spanning on smaller screens if desired */
+    }
+}

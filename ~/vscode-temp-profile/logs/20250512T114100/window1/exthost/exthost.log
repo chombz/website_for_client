@@ -1,0 +1,29 @@
+2025-05-12 11:41:09.102 [info] Extension host with pid 16568 started
+2025-05-12 11:41:09.145 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2025-05-12 11:41:09.320 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2025-05-12 11:41:09.332 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2025-05-12 11:41:09.468 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-05-12 11:41:09.824 [info] Eager extensions activated
+2025-05-12 11:41:09.996 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-05-12 11:41:10.023 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-05-12 11:41:10.091 [info] ExtensionService#_doActivateExtension dbaeumer.vscode-eslint, startup: false, activationEvent: 'onStartupFinished'
+2025-05-12 11:41:10.227 [info] ExtensionService#_doActivateExtension ecmel.vscode-html-css, startup: false, activationEvent: 'onStartupFinished'
+2025-05-12 11:41:10.236 [info] ExtensionService#_doActivateExtension formulahendry.code-runner, startup: false, activationEvent: 'onStartupFinished'
+2025-05-12 11:41:10.501 [info] ExtensionService#_doActivateExtension GitHub.vscode-pull-request-github, startup: false, activationEvent: 'onStartupFinished'
+2025-05-12 11:41:10.959 [info] ExtensionService#_doActivateExtension google.geminicodeassist, startup: false, activationEvent: 'onStartupFinished'
+2025-05-12 11:41:13.942 [info] ExtensionService#_doActivateExtension ms-dotnettools.vscode-dotnet-runtime, startup: false, activationEvent: 'onStartupFinished'
+2025-05-12 11:41:15.229 [info] ExtensionService#_doActivateExtension ms-edgedevtools.vscode-edge-devtools, startup: false, activationEvent: 'onStartupFinished'
+2025-05-12 11:41:15.723 [info] ExtensionService#_doActivateExtension ms-vscode.sublime-keybindings, startup: false, activationEvent: 'onStartupFinished'
+2025-05-12 11:41:15.744 [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer, startup: false, activationEvent: 'onStartupFinished'
+2025-05-12 11:41:15.783 [info] ExtensionService#_doActivateExtension vadimcn.vscode-lldb, startup: false, activationEvent: 'onStartupFinished'
+2025-05-12 11:41:43.021 [info] Extension host terminating: renderer closed the MessagePort
+2025-05-12 11:41:43.320 [error] ProxyResolver#resolveProxy DIRECT Canceled: Canceled
+	at new XN (file:///c:/Users/PC/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:111538)
+	at f5.U (file:///c:/Users/PC/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:116148)
+	at s.<computed>.n.charCodeAt.s.<computed> (file:///c:/Users/PC/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:113642)
+	at Ib.resolveProxy (file:///c:/Users/PC/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:69920)
+	at Object.resolveProxy (file:///c:/Users/PC/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:172:18350)
+	at useProxySettings (c:\Users\PC\AppData\Local\Programs\Microsoft VS Code\resources\app\node_modules\@vscode\proxy-agent\out\index.js:182:16)
+	at c:\Users\PC\AppData\Local\Programs\Microsoft VS Code\resources\app\node_modules\@vscode\proxy-agent\out\index.js:119:13
+	at c:\Users\PC\AppData\Local\Programs\Microsoft VS Code\resources\app\node_modules\@vscode\proxy-agent\out\index.js:707:13 
+2025-05-12 11:41:43.457 [info] Extension host with pid 16568 exiting with code 0

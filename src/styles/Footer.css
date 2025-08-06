@@ -1,0 +1,218 @@
+/* c:\Users\PC\etp-web\src\styles\Footer.css */
+
+/* General Footer Styling */
+.home-footer
+{
+    background-color: #1976d2;
+    /* A modern, dark blue-grey */
+    color: #ffffff;
+    /* Light grey/white for good contrast */
+    padding: 30px 25px;
+    /* Reduced top/bottom padding */
+    /* Generous padding for a spacious feel */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    /* Common system fonts */
+    line-height: 1.6;
+    /* Corrected for better readability */
+    /* Improved readability */
+}
+
+/* Main content area within the footer */
+.footer-section.contact-info
+{
+    max-width: 1100px;
+    /* Constrain width for better readability on large screens */
+    margin: 0 auto;
+    /* Center the content block */
+    text-align: left;
+    /* Align text to the left for contact details */
+}
+
+.footer-section.contact-info h3
+{
+    font-size: 1.75rem;
+    /* Slightly larger heading */
+    color: #ffffff;
+    /* A vibrant blue for headings */
+    margin-bottom: 20px;
+    /* Reduced margin */
+    padding-bottom: 10px;
+    /* Reduced padding */
+    border-bottom: 1px solid #ffffff;
+    /* Subtle separator line */
+    font-weight: 600;
+    /* Bolder heading */
+}
+
+.footer-section.contact-info p
+{
+    font-size: 1rem;
+    margin-bottom: 10px;
+    /* Reduced margin */
+    color: #bdc3c7;
+    /* Softer grey for paragraph text */
+}
+
+.footer-section.contact-info p strong
+{
+    color: #ecf0f1;
+    /* Make 'strong' text stand out */
+    margin-right: 8px;
+    font-weight: 500;
+}
+
+.footer-section.contact-info a
+{
+    color: #ffffff;
+    /* A slightly lighter blue for links */
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.footer-section.contact-info a:hover,
+.footer-section.contact-info a:focus
+{
+    color: #85c1e9;
+    /* Even lighter blue on hover/focus */
+    text-decoration: underline;
+}
+
+/* Styling for the nested footer-info (copyright, tagline, socials) */
+.footer-info
+{
+    margin-top: 25px;
+    /* Reduced margin */
+    padding-top: 15px;
+    /* Reduced padding */
+    border-top: 1px solid #ffffff;
+    /* Separator line above copyright/socials */
+    text-align: center;
+    /* Center this block of text and socials */
+}
+
+.footer-info p
+{
+    font-size: 0.9rem;
+    color: #ffffff;
+    /* Softer grey for less prominent text like copyright */
+    margin-bottom: 8px;
+    /* Reduced margin */
+}
+
+/* Social Media Icons Section */
+.footer-socials
+{
+    margin-top: 15px;
+    /* Reduced margin */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    /* Space between icons */
+}
+
+.social-icon
+{
+    display: inline-flex;
+    /* Helps with alignment if needed */
+    color: #ffffff;
+    /* Default icon color */
+    transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.social-icon svg
+{
+    width: 26px;
+    /* Slightly larger icons */
+    height: 26px;
+    fill: currentColor;
+    /* SVG inherits color from parent <a> tag */
+}
+
+.social-icon:hover,
+.social-icon:focus
+{
+    transform: translateY(-3px) scale(1.1);
+    /* Subtle lift and scale effect */
+}
+
+/* Brand-specific hover colors for social icons */
+.social-icon.facebook-icon:hover,
+.social-icon.facebook-icon:focus
+{
+    color: #1877F2;
+    /* Facebook blue */
+}
+
+.social-icon.youtube-icon:hover,
+.social-icon.youtube-icon:focus
+{
+    color: #FF0000;
+    /* YouTube red */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px)
+{
+    .home-footer
+    {
+        padding: 25px 20px;
+        /* Reduced top/bottom padding for tablets */
+    }
+
+    .footer-section.contact-info h3
+    {
+        font-size: 1.5rem;
+    }
+
+    .footer-section.contact-info p
+    {
+        font-size: 0.95rem;
+    }
+
+    .footer-info p
+    {
+        font-size: 0.85rem;
+    }
+
+    .social-icon svg
+    {
+        width: 24px;
+        height: 24px;
+    }
+
+    .footer-socials
+    {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px)
+{
+    .footer-section.contact-info
+    {
+        text-align: center;
+        /* Center all contact info on very small screens */
+    }
+
+    .footer-section.contact-info h3
+    {
+        font-size: 1.3rem;
+    }
+
+    .footer-section.contact-info p strong
+    {
+        display: block;
+        /* Stack label above value (e.g., Email: [new line] info@etp.co.ke) */
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .footer-section.contact-info p a,
+    .footer-section.contact-info p span
+    {
+        display: block;
+        /* Ensure link/span also takes full width if strong is block */
+        text-align: center;
+    }
+}

@@ -1,0 +1,70 @@
+/* src/styles/NewspaperClippingsCustom.css */
+
+/* Custom grid for the newspaper clippings section */
+.custom-newspaper-clippings-grid
+{
+    display: grid;
+    /* Explicitly set two columns of equal width for standard items */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    /* Adjust gap as needed, matches photo gallery for consistency */
+    margin-top: 20px;
+}
+
+/* Ensure individual clipping cards fill their grid cell */
+.custom-newspaper-clippings-grid .newspaper-clipping-card
+{
+    width: 100%;
+    /* Make sure card fills its grid cell */
+    /* Ensure height consistency with previous "before" look */
+    /* You might need to adjust this value based on your actual content and desired visual */
+    min-height: 400px;
+    /* Example: Adjust this for desired card height */
+    display: flex;
+    /* Helps with content alignment within the card */
+    flex-direction: column;
+}
+
+/* Class for horizontal clippings that should take up the full width */
+.full-width-clipping
+{
+    grid-column: 1 / -1;
+    /* This makes the item span all columns */
+}
+
+/* Optional: Styles for vertical clipping specific images if needed */
+.custom-newspaper-clippings-grid .vertical-clipping-card .clipping-preview-img
+{
+    object-fit: contain;
+    /* Prevents stretching and ensures whole image is visible for vertical */
+    height: 100%;
+    /* Fill the height of its container */
+    width: 100%;
+    /* Fill the width of its container */
+}
+
+/* Ensure image within the clipping card scales properly */
+.custom-newspaper-clippings-grid .newspaper-clipping-card .clipping-preview-img
+{
+    width: 100%;
+    height: auto;
+    /* Maintain aspect ratio */
+    display: block;
+    /* Remove extra space below image */
+}
+
+/* Optional: Media queries for responsiveness */
+@media (max-width: 768px)
+{
+    .custom-newspaper-clippings-grid
+    {
+        grid-template-columns: 1fr;
+        /* Single column on smaller screens */
+    }
+
+    .full-width-clipping
+    {
+        grid-column: auto;
+        /* Reset spanning on smaller screens if desired */
+    }
+}

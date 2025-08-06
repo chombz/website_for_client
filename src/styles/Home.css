@@ -1,0 +1,542 @@
+/* General container for the home page */
+.home-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center the main content horizontally */
+    padding: 20px;
+    /* Add some padding around the whole page */
+    max-width: 1400px;
+    /* Limit overall page width for better readability */
+    margin: 0 auto;
+    /* Center the entire home container on wider screens */
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width and height */
+}
+
+/* Styles for the main slideshow container */
+.slideshow-container
+{
+    position: relative;
+    width: 100%;
+    /* Make it span the full width of its parent */
+    max-width: 1200px;
+    /* Adjust max-width as you like */
+    height: 600px;
+    /* Increased height for a more impactful banner */
+    margin-bottom: 40px;
+    /* Space below the slideshow */
+    overflow: hidden;
+    border-radius: 10px;
+    /* Slightly more rounded corners */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    /* Stronger shadow for depth */
+}
+
+/* Styles for individual slides in the main slideshow */
+.slide
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    /* Ensures the image covers the slide area */
+    background-position: center;
+    /* Centers the image within the slide */
+    opacity: 0;
+    transition: opacity 1.2s ease-in-out;
+    /* Smoother fade transition */
+}
+
+.slide.active
+{
+    opacity: 1;
+}
+
+
+/* Slideshow navigation buttons */
+.slideshow-container .prev,
+.slideshow-container .next
+{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /* Vertically center */
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+    /* Prevent text selection */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Semi-transparent background */
+    z-index: 2;
+    /* Ensure buttons are above slides if needed */
+}
+
+.slideshow-container .prev
+{
+    left: 15px;
+    /* Spacing from the left edge */
+    border-radius: 3px 0 0 3px;
+}
+
+.slideshow-container .next
+{
+    right: 15px;
+    /* Spacing from the right edge */
+    border-radius: 0 3px 3px 0;
+}
+
+.slideshow-container .prev:hover,
+.slideshow-container .next:hover
+{
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Darker on hover */
+}
+
+/* Mission, Vision, Values Section */
+.top-sections-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow items to wrap to the next line on smaller screens */
+    justify-content: center;
+    /* Center the boxes horizontally */
+    width: 100%;
+    max-width: 1200px;
+    /* Match slideshow width for visual alignment */
+    margin-bottom: 50px;
+    /* More spacing below these sections */
+    gap: 20px;
+    /* Space between the boxes */
+}
+
+.top-section
+{
+    flex: 1;
+    /* Allow sections to grow and shrink */
+    min-width: 300px;
+    /* Minimum width to prevent them from becoming too narrow */
+    color: #1976d2;
+    /* <--- **FIX: Set text color to white for contrast on blue backgrounds** */
+    text-align: center;
+    padding: 40px 30px;
+    /* Increased padding inside the boxes */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for each box */
+    transition: transform 0.3s ease;
+    /* Smooth hover effect */
+}
+
+.top-section:hover
+{
+    transform: translateY(-5px);
+    /* Lift effect on hover */
+}
+
+.top-section.mission
+{
+    background-color: #1976d2;
+    /* Consistent blues */
+}
+
+.top-section.vision
+{
+    background-color: #1565c0;
+}
+
+.top-section.values
+{
+    background-color: #0d47a1;
+}
+
+.top-section h2
+{
+    font-size: 2rem;
+    /* Larger headings */
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: inherit;
+    /* Inherit color from parent (.top-section) */
+}
+
+.top-section p
+{
+    font-size: 1.2rem;
+    /* Larger text for readability */
+    line-height: 1.6;
+    color: inherit;
+    /* Inherit color from parent (.top-section) */
+}
+
+/* Activity Photo Gallery Section */
+.activity-gallery-section
+{
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    /* Consistent max-width */
+    margin-bottom: 60px;
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+    /* Light background to define the section */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.activity-gallery-section h2
+{
+    font-size: 2.5rem;
+    color: #333;
+    /* Dark gray for heading on light background */
+    margin-bottom: 30px;
+}
+
+.activity-carousel-wrapper
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    /* Space between arrows and image */
+}
+
+.activity-image-display
+{
+    width: 80%;
+    /* Control image display width */
+    max-width: 900px;
+    /* Max width for the image */
+    height: 500px;
+    /* Fixed height for consistency */
+    overflow: hidden;
+    border: 5px solid #00008B;
+    /* Dark blue border as requested */
+    border-radius: 8px;
+    /* Rounded corners for the image frame */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    /* To center the image within its frame */
+    justify-content: center;
+    align-items: center;
+}
+
+.activity-image
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures the image covers the area without distortion */
+    display: block;
+    /* Remove extra space below image */
+}
+
+.carousel-arrow
+{
+    background-color: #0d47a1;
+    /* Dark blue background for arrows */
+    color: white;
+    /* White arrow icon */
+    border: none;
+    padding: 15px 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 50%;
+    /* Circular buttons */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-arrow:hover
+{
+    background-color: #1976d2;
+    /* Lighter blue on hover */
+    transform: scale(1.05);
+}
+
+/* Navigation Cards Section (About Us & Our Activities) */
+.navigation-cards-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 60px;
+    gap: 30px;
+    /* Space between the cards */
+}
+
+.nav-card
+{
+    position: relative;
+    flex: 1;
+    /* Allow cards to grow and shrink */
+    min-width: 450px;
+    /* Minimum width for readability */
+    height: 350px;
+    /* Fixed height for consistency */
+    border-radius: 10px;
+    overflow: hidden;
+    /* Hide overflow from images */
+    box-shadow: 0 6px 15px #1976d2;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    /* Align overlay content to the bottom */
+    transition: transform 0.3s ease;
+}
+
+.nav-card:hover
+{
+    transform: translateY(-8px);
+    /* Lift effect on hover */
+}
+
+.nav-card.about-us-card
+{
+    background-image: url('/public/images/about-us-placeholder.jpg');
+    /* Placeholder image for About Us */
+    /* Make sure you have a relevant image in your public/images folder */
+}
+
+.nav-card.our-activities-card
+{
+    background-image: url('/public/images/activities-placeholder.jpg');
+    /* Placeholder image for Our Activities */
+    /* Make sure you have a relevant image in your public/images folder */
+}
+
+.card-overlay
+{
+    /* Semi-transparent black overlay */
+    color: #ffffff;
+    /* White text for readability on dark overlay */
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.card-overlay h2
+{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: inherit;
+    /* Inherit color from parent (.card-overlay) */
+}
+
+.card-overlay p
+{
+    font-size: 1.1rem;
+    line-height: 1.4;
+    color: inherit;
+    /* Inherit color from parent (.card-overlay) */
+}
+
+/* Focus Areas Section - Redesigned for better integration */
+.focus-areas-section
+{
+    width: 100%;
+    max-width: 1200px;
+    /* Consistent max-width */
+    margin-bottom: 60px;
+    padding: 50px 30px;
+    /* More padding */
+    background: linear-gradient(to bottom right, #1976d2, #0000CD);
+    /* Stronger gradient */
+    border-radius: 10px;
+    color: #ffffff;
+    /* <--- **FIX: Set default text color to white for this section** */
+    text-align: center;
+}
+
+/* --- Styles for smaller screens (e.g., tablets and phones) --- */
+@media (max-width: 768px)
+{
+    .focus-areas-grid
+    {
+        /* No need to change display: flex, but we want items to stack */
+        flex-direction: column;
+        /* This is the key change for stacking flex items */
+        align-items: center;
+        /* Center the items now that they are in a column */
+    }
+
+    .focus-area-item
+    {
+        flex-basis: 90%;
+        /* Make each item take up most of the width */
+        /* Or you could use width: 90%; */
+        /* min-width can be removed or adjusted if not needed for stacked items */
+        margin-bottom: 20px;
+        /* Add some space between stacked items */
+    }
+
+    /* You might also want to adjust font sizes or padding within items for smaller screens */
+    .focus-area-item h3
+    {
+        /* Assuming you have an h3 in your item */
+        font-size: 1.2em;
+    }
+}
+
+/* Optional: Further adjustments for very small phone screens */
+@media (max-width: 480px)
+{
+    .focus-area-item
+    {
+        flex-basis: 95%;
+        /* Even wider, or full width */
+        /* width: 95%; */
+        padding: 10px;
+        /* Maybe slightly less padding */
+    }
+
+    .focus-area-item h3
+    {
+        font-size: 1.1em;
+    }
+}
+
+.focus-areas-section h2
+{
+    font-size: 2.8rem;
+    /* Larger heading */
+    color: #ffffff;
+    /* White heading */
+    margin-bottom: 40px;
+    /* Subtle text shadow */
+}
+
+.focus-areas-grid
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* Responsive grid */
+    gap: 20px;
+    /* Space between grid items */
+}
+
+.focus-area-item
+{
+    flex-basis: calc(33.333% - 20px);
+    min-width: 280px;
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Semi-transparent white background */
+    padding: 15px;
+    border-radius: 8px;
+    /* Frosted glass effect */
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.focus-area-item h3
+{
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #fff;
+    /* <--- **FIX: Set heading color to white within the item** */
+}
+
+.focus-area-item p
+{
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #f0f0f0;
+    /* <--- **FIX: Set paragraph color to light white/grey within the item** */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px)
+{
+    .slideshow-container
+    {
+        height: 400px;
+        /* Adjust height for smaller screens */
+    }
+
+    .top-sections-container,
+    .navigation-cards-container,
+    .focus-areas-grid
+    {
+        flex-direction: column;
+        /* Stack items vertically on smaller screens */
+        gap: 30px;
+        /* Increase gap when stacked */
+    }
+
+    .top-section,
+    .nav-card,
+    .focus-area-item
+    {
+        min-width: unset;
+        /* Remove min-width on small screens */
+        width: 100%;
+        /* Take full width */
+    }
+
+    .activity-carousel-wrapper
+    {
+        flex-direction: column;
+    }
+
+    .carousel-arrow
+    {
+        margin: 15px 0;
+        /* Add vertical margin for stacked arrows */
+    }
+
+    .activity-image-display
+    {
+        width: 100%;
+        /* Full width for image display */
+        height: 300px;
+        /* Adjust height for smaller screens */
+    }
+
+    .focus-areas-section h2
+    {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 480px)
+{
+    .slideshow-container
+    {
+        height: 250px;
+    }
+
+    .top-section h2
+    {
+        font-size: 1.5rem;
+    }
+
+    .top-section p
+    {
+        font-size: 1rem;
+    }
+
+    .activity-gallery-section h2,
+    .navigation-cards-container h2
+    {
+        font-size: 2rem;
+    }
+
+    .card-overlay h2
+    {
+        font-size: 1.5rem;
+    }
+}
