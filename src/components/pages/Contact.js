@@ -18,7 +18,7 @@ function Contact()
                             <h3>Get In Touch</h3>
                             <div className="contact-item">
                                 <strong>Email:</strong>
-                                <a href="mailto:info@etprog.org">info@etprog.org</a>
+                                <a href="mailto:info@etprog.co.ke">info@etprog.co.ke</a>
                             </div>
                             <div className="contact-item">
                                 <strong>Phone:</strong>
@@ -26,7 +26,7 @@ function Contact()
                             </div>
                             <div className="contact-item">
                                 <strong>Location:</strong>
-                                <span>YMA Building (No.2), Nairobi, Kenya</span>
+                                <span>YMA Building (No.2), Kirichwa Road, Kilimani, Nairobi</span>
                             </div>
                         </div>
                     </div>

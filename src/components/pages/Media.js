@@ -68,7 +68,7 @@ const mediaContent = {
         {
             id: 'FB02_right',
             title: 'Awarding for the training programme',
-            embedHtml: `<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0JMismhzW4yjHTf4ZCi32gMdymvUyYW9K4YQdsVQPvSitYDemfFk6ne9SUazbiMgKl%26id%3D333498257344178&show_text=true&width=500" width="500" height="616" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>`,
+            embedHtml: `<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0P4KH3UhqiSznsGPaHL92sKYxa9kmhct5meHLsCkA6vtGBhP6ZV8gK1Hdm1VdoDP6l%26id%3D100070205743092l%26id%3D333498257344178&show_text=true&width=500" width="500" height="616" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>`,
             description: 'This is a placeholder for another distinct Facebook post.',
         },
     ],

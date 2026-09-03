@@ -11,7 +11,7 @@ function Footer()
                 <h3>Get In Touch</h3>
                 <p>
                     <strong>Email:</strong>
-                    <a href="mailto:info@etprog.org"> info@etprog.org</a>
+                    <a href="mailto:info@etprog.co.ke">info@etprog.co.ke</a>
                 </p>
                 <p>
                     <strong>Phone:</strong>
@@ -19,7 +19,7 @@ function Footer()
                 </p>
                 <p>
                     <strong>Location:</strong>
-                    <span> YMA Building (No.2), Nairobi, Kenya</span>
+                    <span>YMA Building (No.2), Kirichwa Road, Kilimani, Nairobi</span>
                 </p>
                 <div className="footer-info">
                     <p>&copy; {new Date().getFullYear()} ETP. All Rights Reserved.</p>
