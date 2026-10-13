@@ -10,6 +10,11 @@
     /* Or italic if it's an italic font file */
 }
 
+#nprogress .bar {
+  background: #FF5733 !important; /* Change this to your brand color */
+  height: 4px !important; /* Makes the bar slightly thicker */
+}
+
 body
 {
     font-family: 'Roboto', sans-serif;
